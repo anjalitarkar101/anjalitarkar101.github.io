@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #63B3ED;
+    color: #C9A84C;
 }
 
 /* ========================================== */
@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* ========================================== */
 
 #hero {
-    background: linear-gradient(135deg, #2C7A7B 0%, #285E61 50%, #234E52 100%);
+    background: linear-gradient(135deg, #2C7A7B 0%, #234E52 50%, #1A3A3D 100%);
     color: white;
     padding: 8rem 2rem 4rem;
     text-align: center;
@@ -106,13 +106,13 @@ nav ul li a:hover {
     font-weight: 600;
     transition: transform 0.3s, box-shadow 0.3s;
     display: inline-block;
-    background: #63B3ED;
+    background: #C9A84C;
     color: #FFFFFF;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(99, 179, 237, 0.4);
+    box-shadow: 0 10px 25px rgba(201, 168, 76, 0.4);
 }
 
 .btn-secondary {
@@ -124,13 +124,13 @@ nav ul li a:hover {
     display: inline-block;
     background: transparent;
     color: #E6FFFA;
-    border: 2px solid #63B3ED;
+    border: 2px solid #C9A84C;
 }
 
 .btn-secondary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(99, 179, 237, 0.2);
-    background: rgba(99, 179, 237, 0.1);
+    box-shadow: 0 10px 25px rgba(201, 168, 76, 0.2);
+    background: rgba(201, 168, 76, 0.1);
 }
 
 /* ========================================== */
@@ -156,7 +156,7 @@ section h2::after {
     display: block;
     width: 80px;
     height: 4px;
-    background: #63B3ED;
+    background: #C9A84C;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -194,7 +194,7 @@ section h2::after {
 
 .about-text ul li::before {
     content: '✦ ';
-    color: #63B3ED;
+    color: #B76E79;
 }
 
 .about-stats {
@@ -204,11 +204,11 @@ section h2::after {
 }
 
 .stat {
-    background: #EBF8FF;
+    background: #F4E1E3;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid #BEE3F8;
+    border: 1px solid #E8C8CB;
 }
 
 .stat h3 {
@@ -243,7 +243,7 @@ section h2::after {
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    border-top: 4px solid #63B3ED;
+    border-top: 4px solid #B76E79;
 }
 
 .project-card:hover {
@@ -270,7 +270,7 @@ section h2::after {
 }
 
 .project-card p strong {
-    color: #2C7A7B;
+    color: #B76E79;
 }
 
 .project-tech {
@@ -281,12 +281,12 @@ section h2::after {
 }
 
 .project-tech span {
-    background: #EBF8FF;
+    background: #F4E1E3;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
     color: #2C7A7B;
-    border: 1px solid #BEE3F8;
+    border: 1px solid #E8C8CB;
 }
 
 .project-links {
@@ -347,7 +347,7 @@ section h2::after {
 .skill-category h3 {
     color: #2C7A7B;
     margin-bottom: 0.8rem;
-    border-bottom: 2px solid #63B3ED;
+    border-bottom: 2px solid #B76E79;
     padding-bottom: 0.5rem;
 }
 
@@ -370,7 +370,7 @@ section h2::after {
 /* ========================================== */
 
 #contact {
-    background: linear-gradient(135deg, #2C7A7B 0%, #285E61 100%);
+    background: linear-gradient(135deg, #2C7A7B 0%, #234E52 100%);
     color: white;
     text-align: center;
     max-width: 100%;
@@ -381,7 +381,7 @@ section h2::after {
 }
 
 #contact h2::after {
-    background: #63B3ED;
+    background: #C9A84C;
 }
 
 .contact-content p {
@@ -399,7 +399,7 @@ section h2::after {
 }
 
 .contact-btn {
-    background: #63B3ED;
+    background: #C9A84C;
     color: #FFFFFF;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -410,7 +410,7 @@ section h2::after {
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(99, 179, 237, 0.4);
+    box-shadow: 0 10px 25px rgba(201, 168, 76, 0.4);
 }
 
 /* ========================================== */
@@ -418,7 +418,7 @@ section h2::after {
 /* ========================================== */
 
 footer {
-    background: #234E52;
+    background: #1A3A3D;
     color: #81C6C8;
     text-align: center;
     padding: 2rem;
