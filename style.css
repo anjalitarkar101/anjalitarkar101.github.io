@@ -28,7 +28,7 @@ header {
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(244, 166, 180, 0.2);
+    border-bottom: 2px solid #F8D7DA;
 }
 
 nav {
@@ -43,7 +43,10 @@ nav {
 .logo {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #8B6B8B;
+    background: linear-gradient(135deg, #D4747A, #F4A6B4, #B8A9D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: 1px;
 }
 
@@ -61,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #F4A6B4;
+    color: #D4747A;
 }
 
 /* ========================================== */
@@ -69,7 +72,7 @@ nav ul li a:hover {
 /* ========================================== */
 
 #hero {
-    background: linear-gradient(135deg, #FFF0F3 0%, #FDE8EC 30%, #FBDCE3 60%, #FACCD8 100%);
+    background: linear-gradient(135deg, #FFF0F3 0%, #FDE8EC 20%, #FBDCE3 40%, #FACCD8 60%, #F8BCC8 80%, #F5A8B8 100%);
     color: #3D2C3A;
     padding: 8rem 2rem 4rem;
     text-align: center;
@@ -82,20 +85,28 @@ nav ul li a:hover {
 }
 
 #hero::before {
-    content: '';
+    content: '🌸';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 30% 50%, rgba(244, 166, 180, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 70% 50%, rgba(184, 169, 212, 0.10) 0%, transparent 50%);
-    animation: heroGlow 12s ease-in-out infinite alternate;
+    font-size: 15rem;
+    opacity: 0.05;
+    top: -10%;
+    right: -5%;
+    transform: rotate(-15deg);
+}
+
+#hero::after {
+    content: '🌸';
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.05;
+    bottom: -5%;
+    left: -5%;
+    transform: rotate(20deg);
 }
 
 @keyframes heroGlow {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(2%, 2%); }
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(2%, 2%) scale(1.05); }
 }
 
 .hero-content {
@@ -106,8 +117,11 @@ nav ul li a:hover {
 .hero-content h1 {
     font-size: 3.8rem;
     margin-bottom: 1rem;
-    color: #6B4B6B;
-    text-shadow: 0 2px 20px rgba(244, 166, 180, 0.2);
+    background: linear-gradient(135deg, #6B4B6B, #D4747A, #F4A6B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 30px rgba(212, 116, 122, 0.2);
 }
 
 .hero-content p {
@@ -132,14 +146,14 @@ nav ul li a:hover {
     font-weight: 600;
     transition: all 0.3s ease;
     display: inline-block;
-    background: linear-gradient(135deg, #F4A6B4, #D4747A);
+    background: linear-gradient(135deg, #D4747A, #F4A6B4);
     color: #FFFFFF;
-    box-shadow: 0 4px 25px rgba(244, 166, 180, 0.4);
+    box-shadow: 0 4px 25px rgba(212, 116, 122, 0.4);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 35px rgba(244, 166, 180, 0.5);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 35px rgba(212, 116, 122, 0.5);
 }
 
 .btn-secondary {
@@ -150,15 +164,15 @@ nav ul li a:hover {
     transition: all 0.3s ease;
     display: inline-block;
     background: rgba(255, 255, 255, 0.6);
-    color: #6B4B6B;
-    border: 1px solid rgba(244, 166, 180, 0.3);
+    color: #D4747A;
+    border: 2px solid rgba(212, 116, 122, 0.3);
     backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
     transform: translateY(-3px);
     background: rgba(255, 255, 255, 0.8);
-    border-color: #F4A6B4;
+    border-color: #D4747A;
 }
 
 /* ========================================== */
@@ -175,18 +189,19 @@ section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #6B4B6B;
+    background: linear-gradient(135deg, #6B4B6B, #D4747A, #F4A6B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     position: relative;
 }
 
 section h2::after {
-    content: '';
+    content: '🌸';
+    font-size: 1.8rem;
     display: block;
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #F4A6B4, #B8A9D4);
-    margin: 10px auto 0;
-    border-radius: 2px;
+    margin: 5px auto 0;
+    opacity: 0.3;
 }
 
 /* ========================================== */
@@ -195,6 +210,8 @@ section h2::after {
 
 #about {
     background: #FFFFFF;
+    border-top: 4px solid #F8D7DA;
+    border-bottom: 4px solid #F8D7DA;
 }
 
 .about-content {
@@ -221,8 +238,8 @@ section h2::after {
 }
 
 .about-text ul li::before {
-    content: '✦ ';
-    color: #F4A6B4;
+    content: '🌸 ';
+    font-size: 0.9rem;
 }
 
 .about-stats {
@@ -236,12 +253,14 @@ section h2::after {
     padding: 1.5rem;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid rgba(244, 166, 180, 0.2);
-    transition: transform 0.3s;
+    border: 2px solid rgba(244, 166, 180, 0.2);
+    transition: all 0.3s;
 }
 
 .stat:hover {
     transform: translateY(-3px);
+    border-color: rgba(212, 116, 122, 0.4);
+    box-shadow: 0 8px 25px rgba(212, 116, 122, 0.1);
 }
 
 .stat h3 {
@@ -277,13 +296,13 @@ section h2::after {
     transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(244, 166, 180, 0.12);
+    border: 2px solid rgba(244, 166, 180, 0.12);
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(244, 166, 180, 0.15);
-    border-color: rgba(244, 166, 180, 0.25);
+    box-shadow: 0 20px 50px rgba(212, 116, 122, 0.15);
+    border-color: #D4747A;
 }
 
 .project-icon {
@@ -294,7 +313,10 @@ section h2::after {
 .project-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #6B4B6B;
+    background: linear-gradient(135deg, #6B4B6B, #D4747A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .project-card p {
@@ -341,14 +363,14 @@ section h2::after {
 }
 
 .btn-demo {
-    background: linear-gradient(135deg, #F4A6B4, #D4747A);
+    background: linear-gradient(135deg, #D4747A, #F4A6B4);
     color: #FFFFFF;
-    box-shadow: 0 4px 15px rgba(244, 166, 180, 0.25);
+    box-shadow: 0 4px 15px rgba(212, 116, 122, 0.25);
 }
 
 .btn-demo:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(244, 166, 180, 0.35);
+    box-shadow: 0 6px 25px rgba(212, 116, 122, 0.35);
 }
 
 .btn-code {
@@ -366,6 +388,8 @@ section h2::after {
 
 #skills {
     background: #FFFFFF;
+    border-top: 4px solid #F8D7DA;
+    border-bottom: 4px solid #F8D7DA;
 }
 
 .skills-grid {
@@ -378,12 +402,14 @@ section h2::after {
     background: #FFF5F7;
     padding: 1.5rem;
     border-radius: 16px;
-    border: 1px solid rgba(244, 166, 180, 0.1);
-    transition: transform 0.3s;
+    border: 2px solid rgba(244, 166, 180, 0.1);
+    transition: all 0.3s;
 }
 
 .skill-category:hover {
     transform: translateY(-3px);
+    border-color: #D4747A;
+    box-shadow: 0 8px 25px rgba(212, 116, 122, 0.1);
 }
 
 .skill-category h3 {
@@ -412,18 +438,26 @@ section h2::after {
 /* ========================================== */
 
 #contact {
-    background: linear-gradient(135deg, #FDE8EC 0%, #FBDCE3 50%, #FACCD8 100%);
+    background: linear-gradient(135deg, #FDE8EC 0%, #FBDCE3 30%, #FACCD8 60%, #F8BCC8 100%);
     color: #3D2C3A;
     text-align: center;
     max-width: 100%;
+    padding: 5rem 2rem;
 }
 
 #contact h2 {
-    color: #6B4B6B;
+    background: linear-gradient(135deg, #6B4B6B, #D4747A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 #contact h2::after {
-    background: linear-gradient(90deg, #F4A6B4, #B8A9D4);
+    content: '🌸';
+    font-size: 2rem;
+    display: block;
+    margin: 5px auto 0;
+    opacity: 0.5;
 }
 
 .contact-content p {
@@ -441,19 +475,19 @@ section h2::after {
 }
 
 .contact-btn {
-    background: linear-gradient(135deg, #F4A6B4, #D4747A);
+    background: linear-gradient(135deg, #D4747A, #F4A6B4);
     color: #FFFFFF;
     padding: 0.8rem 2rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s;
-    box-shadow: 0 4px 25px rgba(244, 166, 180, 0.3);
+    box-shadow: 0 4px 25px rgba(212, 116, 122, 0.3);
 }
 
 .contact-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 35px rgba(244, 166, 180, 0.4);
+    box-shadow: 0 8px 35px rgba(212, 116, 122, 0.4);
 }
 
 /* ========================================== */
@@ -465,7 +499,11 @@ footer {
     color: #B8A9D4;
     text-align: center;
     padding: 2rem;
-    border-top: 1px solid rgba(244, 166, 180, 0.1);
+    border-top: 4px solid #D4747A;
+}
+
+footer .heart {
+    color: #F4A6B4;
 }
 
 /* ========================================== */
