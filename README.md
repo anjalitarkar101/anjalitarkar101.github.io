@@ -89,7 +89,7 @@ Visit my portfolio: [anjalitarkar101.github.io](https://anjalitarkar101.github.i
 | **Machine Learning** | Scikit-learn, KNN, Cosine Similarity, TF-IDF |
 | **Data Science** | Pandas, NumPy, EDA, Data Visualization, Feature Engineering |
 | **Deployment** | Streamlit, GitHub Pages, Streamlit Cloud, Git |
-| **Programming** | Python, SQL |
+| **Programming** | Python |
 
 ---
 
