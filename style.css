@@ -11,8 +11,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #2d1b1b;
-    background: #faf6f2;
+    color: #2D3748;
+    background: #F7FAFC;
 }
 
 /* ========================================== */
@@ -20,8 +20,8 @@ body {
 /* ========================================== */
 
 header {
-    background: #8B1A1A;
-    box-shadow: 0 2px 15px rgba(139, 26, 26, 0.3);
+    background: #2C7A7B;
+    box-shadow: 0 2px 15px rgba(44, 122, 123, 0.3);
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,7 +41,7 @@ nav {
 .logo {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #C9A84C;
+    color: #FFFFFF;
     letter-spacing: 1px;
 }
 
@@ -53,13 +53,13 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #F5E6D3;
+    color: #E6FFFA;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #C9A84C;
+    color: #63B3ED;
 }
 
 /* ========================================== */
@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* ========================================== */
 
 #hero {
-    background: linear-gradient(135deg, #8B1A1A 0%, #6B0F0F 50%, #4a0a0a 100%);
+    background: linear-gradient(135deg, #2C7A7B 0%, #285E61 50%, #234E52 100%);
     color: white;
     padding: 8rem 2rem 4rem;
     text-align: center;
@@ -80,8 +80,8 @@ nav ul li a:hover {
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: #C9A84C;
-    text-shadow: 0 2px 10px rgba(201, 168, 76, 0.3);
+    color: #FFFFFF;
+    text-shadow: 0 2px 10px rgba(44, 122, 123, 0.4);
 }
 
 .hero-content p {
@@ -89,7 +89,7 @@ nav ul li a:hover {
     opacity: 0.95;
     max-width: 600px;
     margin: 0 auto 2rem;
-    color: #F5E6D3;
+    color: #E6FFFA;
 }
 
 .hero-buttons {
@@ -106,13 +106,13 @@ nav ul li a:hover {
     font-weight: 600;
     transition: transform 0.3s, box-shadow 0.3s;
     display: inline-block;
-    background: #C9A84C;
-    color: #8B1A1A;
+    background: #63B3ED;
+    color: #FFFFFF;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(201, 168, 76, 0.4);
+    box-shadow: 0 10px 25px rgba(99, 179, 237, 0.4);
 }
 
 .btn-secondary {
@@ -123,14 +123,14 @@ nav ul li a:hover {
     transition: transform 0.3s, box-shadow 0.3s;
     display: inline-block;
     background: transparent;
-    color: #F5E6D3;
-    border: 2px solid #C9A84C;
+    color: #E6FFFA;
+    border: 2px solid #63B3ED;
 }
 
 .btn-secondary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(201, 168, 76, 0.2);
-    background: rgba(201, 168, 76, 0.1);
+    box-shadow: 0 10px 25px rgba(99, 179, 237, 0.2);
+    background: rgba(99, 179, 237, 0.1);
 }
 
 /* ========================================== */
@@ -147,7 +147,7 @@ section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #8B1A1A;
+    color: #2C7A7B;
     position: relative;
 }
 
@@ -156,7 +156,7 @@ section h2::after {
     display: block;
     width: 80px;
     height: 4px;
-    background: #C9A84C;
+    background: #63B3ED;
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -166,7 +166,7 @@ section h2::after {
 /* ========================================== */
 
 #about {
-    background: white;
+    background: #FFFFFF;
 }
 
 .about-content {
@@ -178,7 +178,7 @@ section h2::after {
 
 .about-text p {
     margin-bottom: 1rem;
-    color: #2d1b1b;
+    color: #2D3748;
 }
 
 .about-text ul {
@@ -188,13 +188,13 @@ section h2::after {
 
 .about-text ul li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #f0e8e0;
-    color: #2d1b1b;
+    border-bottom: 1px solid #E2E8F0;
+    color: #2D3748;
 }
 
 .about-text ul li::before {
-    content: '◆ ';
-    color: #C9A84C;
+    content: '✦ ';
+    color: #63B3ED;
 }
 
 .about-stats {
@@ -204,20 +204,20 @@ section h2::after {
 }
 
 .stat {
-    background: #faf6f2;
+    background: #EBF8FF;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid #e8ddd0;
+    border: 1px solid #BEE3F8;
 }
 
 .stat h3 {
     font-size: 2.5rem;
-    color: #8B1A1A;
+    color: #2C7A7B;
 }
 
 .stat p {
-    color: #666;
+    color: #4A5568;
     font-size: 0.9rem;
 }
 
@@ -226,7 +226,7 @@ section h2::after {
 /* ========================================== */
 
 #projects {
-    background: #faf6f2;
+    background: #F7FAFC;
 }
 
 .projects-grid {
@@ -236,19 +236,19 @@ section h2::after {
 }
 
 .project-card {
-    background: white;
+    background: #FFFFFF;
     border-radius: 16px;
     padding: 1.8rem;
-    box-shadow: 0 4px 15px rgba(139, 26, 26, 0.08);
+    box-shadow: 0 4px 15px rgba(44, 122, 123, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    border-top: 4px solid #C9A84C;
+    border-top: 4px solid #63B3ED;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(139, 26, 26, 0.15);
+    box-shadow: 0 15px 40px rgba(44, 122, 123, 0.15);
 }
 
 .project-icon {
@@ -259,18 +259,18 @@ section h2::after {
 .project-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #8B1A1A;
+    color: #2C7A7B;
 }
 
 .project-card p {
-    color: #555;
+    color: #4A5568;
     font-size: 0.95rem;
     margin-bottom: 1rem;
     flex-grow: 1;
 }
 
 .project-card p strong {
-    color: #8B1A1A;
+    color: #2C7A7B;
 }
 
 .project-tech {
@@ -281,12 +281,12 @@ section h2::after {
 }
 
 .project-tech span {
-    background: #faf6f2;
+    background: #EBF8FF;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
-    color: #8B1A1A;
-    border: 1px solid #e8ddd0;
+    color: #2C7A7B;
+    border: 1px solid #BEE3F8;
 }
 
 .project-links {
@@ -306,21 +306,21 @@ section h2::after {
 }
 
 .btn-demo {
-    background: #8B1A1A;
-    color: #F5E6D3;
+    background: #2C7A7B;
+    color: #FFFFFF;
 }
 
 .btn-demo:hover {
-    background: #6B0F0F;
+    background: #234E52;
 }
 
 .btn-code {
-    background: #f0e8e0;
-    color: #8B1A1A;
+    background: #EDF2F7;
+    color: #2C7A7B;
 }
 
 .btn-code:hover {
-    background: #e8ddd0;
+    background: #E2E8F0;
 }
 
 /* ========================================== */
@@ -328,7 +328,7 @@ section h2::after {
 /* ========================================== */
 
 #skills {
-    background: white;
+    background: #FFFFFF;
 }
 
 .skills-grid {
@@ -338,16 +338,16 @@ section h2::after {
 }
 
 .skill-category {
-    background: #faf6f2;
+    background: #F7FAFC;
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #e8ddd0;
+    border: 1px solid #E2E8F0;
 }
 
 .skill-category h3 {
-    color: #8B1A1A;
+    color: #2C7A7B;
     margin-bottom: 0.8rem;
-    border-bottom: 2px solid #C9A84C;
+    border-bottom: 2px solid #63B3ED;
     padding-bottom: 0.5rem;
 }
 
@@ -357,8 +357,8 @@ section h2::after {
 
 .skill-category ul li {
     padding: 0.4rem 0;
-    color: #555;
-    border-bottom: 1px solid #f0e8e0;
+    color: #4A5568;
+    border-bottom: 1px solid #EDF2F7;
 }
 
 .skill-category ul li:last-child {
@@ -370,25 +370,25 @@ section h2::after {
 /* ========================================== */
 
 #contact {
-    background: linear-gradient(135deg, #8B1A1A 0%, #6B0F0F 100%);
+    background: linear-gradient(135deg, #2C7A7B 0%, #285E61 100%);
     color: white;
     text-align: center;
     max-width: 100%;
 }
 
 #contact h2 {
-    color: #C9A84C;
+    color: #FFFFFF;
 }
 
 #contact h2::after {
-    background: #F5E6D3;
+    background: #63B3ED;
 }
 
 .contact-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.95;
-    color: #F5E6D3;
+    color: #E6FFFA;
 }
 
 .contact-links {
@@ -399,8 +399,8 @@ section h2::after {
 }
 
 .contact-btn {
-    background: #C9A84C;
-    color: #8B1A1A;
+    background: #63B3ED;
+    color: #FFFFFF;
     padding: 0.8rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -410,7 +410,7 @@ section h2::after {
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(201, 168, 76, 0.4);
+    box-shadow: 0 10px 25px rgba(99, 179, 237, 0.4);
 }
 
 /* ========================================== */
@@ -418,8 +418,8 @@ section h2::after {
 /* ========================================== */
 
 footer {
-    background: #2d1b1b;
-    color: #a08070;
+    background: #234E52;
+    color: #81C6C8;
     text-align: center;
     padding: 2rem;
 }
