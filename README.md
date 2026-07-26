@@ -32,7 +32,7 @@ Visit my portfolio: [anjalitarkar101.github.io](https://anjalitarkar101.github.i
 - **Description:** Matches users to 100+ Bollywood celebrities using VGG-Face (4096-dim vectors) and cosine similarity
 - **Tech:** DeepFace, VGG-Face, MTCNN, Streamlit
 
-### 2. 🐱 Cat VS Dog Classifier
+### 2. 🐱 Cat VS Dog 🐶 Classifier
 - **Type:** Binary Classification / Computer Vision
 - **Accuracy:** 96.5%
 - **Description:** CNN built from scratch with data augmentation and dropout (50%)
